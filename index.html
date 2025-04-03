@@ -6,13 +6,19 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1>Album Fetcher</h1>
+<h1>Album Fetcher <button onclick="changeLightMode()">Light/Dark Mode</button></h1>
+<h2>NOTE: Any album you fetch, its info will be lost when this page is refreshed or closed!</h2>
 <div>
     <label for="artistName">Artist name:</label>
     <input type="text" id="artistName">
     <label for="albumName">Album name:</label>
     <input type="text" id="albumName">
     <button onclick="getAlbum()">Get Album Information</button>
+</div>
+
+<div id="albumContainer">
+    <!-- Add album information -->
+
 </div>
 <script src="index.js"></script>
 </body>
